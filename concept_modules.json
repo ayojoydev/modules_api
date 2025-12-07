@@ -1,0 +1,34 @@
+{
+  "group": "Concept groups",
+  "modules": {
+    "sniper": {
+      "moduleType": "Concept",
+      "localization": {
+        "ru": "Снайпер",
+        "en": "Sniper",
+        "es": "",
+        "fr": ""
+      },
+      "stats": {
+        "plates_penalty": { "a": 0.0, "b": 0.0 },
+        "head_modifier":  { "a": 0.0, "b": 0.0 },
+        "limb_modifier":  { "a": 0.0, "b": 0.0 }
+      }
+    },
+
+    "hunter": {
+      "moduleType": "Concept",
+      "localization": {
+        "ru": "Охотник",
+        "en": "Hunter",
+        "es": "",
+        "fr": ""
+      },
+      "stats": {
+        "recoil":         { "a": 0.0, "b": 0.0 },
+        "horiz_recoil":   { "a": 0.0, "b": 0.0 },
+        "per_missing_hp": { "a": 0.0, "b": 0.0 }
+      }
+    }
+  }
+}

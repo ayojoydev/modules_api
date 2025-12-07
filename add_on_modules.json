@@ -1,0 +1,160 @@
+{
+  "group": "Add-On",
+  "modules": {
+    "vigilant": {
+      "moduleType": "Accuracy",
+      "localization": {
+        "ru": "Бдительный",
+        "en": "Vigilant",
+        "es": "",
+        "fr": ""
+      },
+      "stats": {
+        "speed": { "a": 0.0, "b": 0.0 }
+      }
+    },
+
+    "sustainable": {
+      "moduleType": "Accuracy",
+      "localization": {
+        "ru": "Устойчивый",
+        "en": "Sustainable",
+        "es": "",
+        "fr": ""
+      },
+      "stats": {
+        "spread": { "a": 0.0, "b": 0.0 }
+      }
+    },
+
+    "summarising": {
+      "moduleType": "Accuracy",
+      "localization": {
+        "ru": "Суммирующий",
+        "en": "Summarising",
+        "es": "",
+        "fr": ""
+      },
+      "stats": {
+        "spread": { "a": 0.0, "b": 0.0 }
+      }
+    },
+
+    "vertical": {
+      "moduleType": "Control",
+      "localization": {
+        "ru": "Вертикальный",
+        "en": "Vertical",
+        "es": "",
+        "fr": ""
+      },
+      "stats": {
+        "recoil_vertical": { "a": 0.0, "b": 0.0 }
+      }
+    },
+
+    "horizontal": {
+      "moduleType": "Control",
+      "localization": {
+        "ru": "Горизонтальный",
+        "en": "Horizontal",
+        "es": "",
+        "fr": ""
+      },
+      "stats": {
+        "recoil_horizontal": { "a": 0.0, "b": 0.0 }
+      }
+    },
+
+    "smooth": {
+      "moduleType": "Control",
+      "localization": {
+        "ru": "Плавный",
+        "en": "Smooth",
+        "es": "",
+        "fr": ""
+      },
+      "stats": {
+        "recoil_growth": { "a": 0.0, "b": 0.0 }
+      }
+    },
+
+    "instant": {
+      "moduleType": "Speed",
+      "localization": {
+        "ru": "Мгновенный",
+        "en": "Instant",
+        "es": "",
+        "fr": ""
+      },
+      "stats": {
+        "speed": { "a": 0.0, "b": 0.0 }
+      }
+    },
+
+    "focusing": {
+      "moduleType": "Speed",
+      "localization": {
+        "ru": "Фокусный",
+        "en": "Focusing",
+        "es": "",
+        "fr": ""
+      },
+      "stats": {
+        "speed": { "a": 0.0, "b": 0.0 }
+      }
+    },
+
+    "mobile": {
+      "moduleType": "Speed",
+      "localization": {
+        "ru": "Подвижный",
+        "en": "Mobile",
+        "es": "",
+        "fr": ""
+      },
+      "stats": {
+        "speed": { "a": 0.0, "b": 0.0 }
+      }
+    },
+
+    "comfortable": {
+      "moduleType": "Convenience",
+      "localization": {
+        "ru": "Комфортный",
+        "en": "Comfortable",
+        "es": "",
+        "fr": ""
+      },
+      "stats": {
+        "ergonomics": { "a": 0.0, "b": 0.0 }
+      }
+    },
+
+    "stable": {
+      "moduleType": "Convenience",
+      "localization": {
+        "ru": "Стабильный",
+        "en": "Stable",
+        "es": "",
+        "fr": ""
+      },
+      "stats": {
+        "stability": { "a": 0.0, "b": 0.0 }
+      }
+    },
+
+    "harmonious": {
+      "moduleType": "Convenience",
+      "localization": {
+        "ru": "Гармоничный",
+        "en": "Harmonious",
+        "es": "",
+        "fr": ""
+      },
+      "stats": {
+        "sway": { "a": 0.0, "b": 0.0 }
+      }
+    }
+  }
+}

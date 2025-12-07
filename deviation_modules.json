@@ -1,0 +1,160 @@
+{
+  "group": "Deviation groups",
+  "modules": {
+    "shaky": {
+      "moduleType": "Accuracy",
+      "localization": {
+        "ru": "Дрожащий",
+        "en": "Shaky",
+        "es": "",
+        "fr": ""
+      },
+      "stats": {
+        "aim_time": { "a": 0.0, "b": 0.0 }
+      }
+    },
+
+    "unstable_accuracy": {
+      "moduleType": "Accuracy",
+      "localization": {
+        "ru": "Неустойчивый",
+        "en": "Unstable",
+        "es": "",
+        "fr": ""
+      },
+      "stats": {
+        "hipfire_spread": { "a": 0.0, "b": 0.0 }
+      }
+    },
+
+    "negative": {
+      "moduleType": "Accuracy",
+      "localization": {
+        "ru": "Отрицающий",
+        "en": "Negative",
+        "es": "",
+        "fr": ""
+      },
+      "stats": {
+        "spread": { "a": 0.0, "b": 0.0 }
+      }
+    },
+
+    "outgoing": {
+      "moduleType": "Control",
+      "localization": {
+        "ru": "Уходящий",
+        "en": "Outgoing",
+        "es": "",
+        "fr": ""
+      },
+      "stats": {
+        "recoil": { "a": 0.0, "b": 0.0 }
+      }
+    },
+
+    "shifting": {
+      "moduleType": "Control",
+      "localization": {
+        "ru": "Сдвигающий",
+        "en": "Shifting",
+        "es": "",
+        "fr": ""
+      },
+      "stats": {
+        "recoil_horizontal": { "a": 0.0, "b": 0.0 }
+      }
+    },
+
+    "sharp": {
+      "moduleType": "Control",
+      "localization": {
+        "ru": "Резкий",
+        "en": "Sharp",
+        "es": "",
+        "fr": ""
+      },
+      "stats": {
+        "recoil_growth": { "a": 0.0, "b": 0.0 }
+      }
+    },
+
+    "inert": {
+      "moduleType": "Speed",
+      "localization": {
+        "ru": "Инертный",
+        "en": "Inert",
+        "es": "",
+        "fr": ""
+      },
+      "stats": {
+        "draw_time": { "a": 0.0, "b": 0.0 }
+      }
+    },
+
+    "slow": {
+      "moduleType": "Speed",
+      "localization": {
+        "ru": "Медлительный",
+        "en": "Slow",
+        "es": "",
+        "fr": ""
+      },
+      "stats": {
+        "aim_speed": { "a": 0.0, "b": 0.0 }
+      }
+    },
+
+    "sluggish": {
+      "moduleType": "Speed",
+      "localization": {
+        "ru": "Заторможенный",
+        "en": "Sluggish",
+        "es": "",
+        "fr": ""
+      },
+      "stats": {
+        "weapon_move_speed": { "a": 0.0, "b": 0.0 }
+      }
+    },
+
+    "uncomfortable": {
+      "moduleType": "Convenience",
+      "localization": {
+        "ru": "Дискомфортный",
+        "en": "Uncomfortable",
+        "es": "",
+        "fr": ""
+      },
+      "stats": {
+        "ergonomics": { "a": 0.0, "b": 0.0 }
+      }
+    },
+
+    "unstable_convenience": {
+      "moduleType": "Convenience",
+      "localization": {
+        "ru": "Нестабильный",
+        "en": "Unstable",
+        "es": "",
+        "fr": ""
+      },
+      "stats": {
+        "stabilisation": { "a": 0.0, "b": 0.0 }
+      }
+    },
+
+    "lufting": {
+      "moduleType": "Convenience",
+      "localization": {
+        "ru": "Люфтящий",
+        "en": "Lufting",
+        "es": "",
+        "fr": ""
+      },
+      "stats": {
+        "sway": { "a": 0.0, "b": 0.0 }
+      }
+    }
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "sniper": {
+    "display_name": "Снайпер",
+    "stats": {
+      "plates_penalty":   { "a": -37.504, "b": -0.229   },
+      "head_modifier":    { "a":  2.531, "b":  0.0155   },
+      "limb_modifier":    { "a": 15.936,  "b":  0.0975  }
+    }
+  },
+
+  "hunter": {
+    "display_name": "Охотник",
+    "stats": {
+      "recoil":          { "a":  2.182, "b": 0.034   },
+      "horiz_recoil":    { "a":  2.182, "b": 0.034   },
+      "per_missing_hp":  { "a":  0.025, "b": 0.0003  }
+    }
+  },
+
+  "vigilant": {
+    "display_name": "Бдительный",
+    "stats": {
+      "speed": { "a": 3.631685, "b": 0.057454 }
+    }
+  }
+
+  // и тут еще будет куууча модулей
+}

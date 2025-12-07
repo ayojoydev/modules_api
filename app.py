@@ -50,9 +50,9 @@ class ModuleListItem(BaseModel):
 BASE_DIR = Path(__file__).resolve().parent
 
 MODULE_FILES = [
-    BASE_DIR / "add_on_modules.json",
-    BASE_DIR / "concept_modules.json",
-    BASE_DIR / "deviation_modules.json",
+    BASE_DIR / "modules_configuration/add_on_modules.json",
+    BASE_DIR / "modules_configuration/concept_modules.json",
+    BASE_DIR / "modules_configuration/deviation_modules.json",
 ]
 
 MODULES: Dict[str, ModuleDefinition] = {}

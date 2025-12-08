@@ -5,6 +5,23 @@ import json
 from fastapi import FastAPI, HTTPException, Query
 from pydantic import BaseModel
 
+from typing import Dict, List, Optional
+
+
+#cors
+from fastapi.middleware.cors import CORSMiddleware
+
+app = FastAPI(title="Stalcraft Modules API")
+
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=["*"],     # можно потом сузить до своего домена
+    allow_credentials=False,
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
+
+
 
 # Pydantic-модели
 
@@ -115,6 +132,27 @@ def load_modules() -> None:
                 ) from e
 
 
+def normalize_group_name(name: Optional[str]) -> str:
+    """
+    Приводим любое текстовое имя группы к внутреннему id:
+    - всё, что похоже на 'add' или 'надстро' -> 'add-on'
+    - всё, что похоже на 'deviat' или 'отклон' -> 'deviation'
+    - всё, что похоже на 'concept' или 'концеп' -> 'concept'
+    Остальное возвращаем как есть (на случай, если захочешь расширять).
+    """
+    if not name:
+        return ""
+    n = name.lower()
+    if "add" in n or "надстро" in n:
+        return "add-on"
+    if "deviat" in n or "отклон" in n:
+        return "deviation"
+    if "concept" in n or "концеп" in n:
+        return "concept"
+    return n
+
+
+
 def resolve_display_name(mod: ModuleDefinition, lang: str) -> Optional[str]:
     """
     Выбирает локализованное имя модуля.
@@ -220,6 +258,60 @@ async def list_modules(
             )
         )
     return result
+
+
+@app.get("/modules/by-group", response_model=List[ModuleListItem])
+async def list_modules_by_group(
+    group: str = Query(..., description="Группа: add-on / deviation / concept (можно писать по-русски)"),
+    lang: str = Query(
+        "ru",
+        description="Код языка локализации (ru/en/es/fr)",
+        regex="^(ru|en|es|fr)$",
+    ),
+):
+    """
+    Вернуть модули только одной логической группы.
+    Параметр group можно передавать в свободной форме:
+    - 'add-on', 'addon', 'AddOn', 'надстройки' -> add-on
+    - 'deviation', 'отклонения' -> deviation
+    - 'concept', 'концепт' -> concept
+    """
+    try:
+        load_modules()
+    except RuntimeError as e:
+        raise HTTPException(status_code=500, detail=str(e))
+
+    norm_requested = normalize_group_name(group)
+    if norm_requested not in {"add-on", "deviation", "concept"}:
+        raise HTTPException(status_code=400, detail=f"Unknown group '{group}'")
+
+    result: List[ModuleListItem] = []
+
+    for key, mod in MODULES.items():
+        mod_norm_group = normalize_group_name(mod.group)
+        if mod_norm_group != norm_requested:
+            continue
+
+        display_name = resolve_display_name(mod, lang)
+        result.append(
+            ModuleListItem(
+                key=key,
+                group=mod.group,          # отдаём как есть, что в json'ах
+                moduleType=mod.moduleType,
+                display_name=display_name,
+                stat_keys=list(mod.stats.keys()),
+            )
+        )
+
+    if not result:
+        # Можно и пустой список вернуть, но так проще дебажить
+        raise HTTPException(
+            status_code=404,
+            detail=f"No modules found for group '{group}' (normalized='{norm_requested}')",
+        )
+
+    return result
+
 
 
 @app.get("/module-stats", response_model=ModuleStatsResponse)

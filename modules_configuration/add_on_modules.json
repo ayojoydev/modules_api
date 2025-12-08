@@ -1,5 +1,5 @@
 {
-  "group": "Add-On groups",
+  "group": "Add-On",
   "modules": {
     "vigilant": {
       "moduleType": "Accuracy",

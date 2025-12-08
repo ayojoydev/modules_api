@@ -1,5 +1,5 @@
 {
-  "group": "Deviation groups",
+  "group": "Deviation",
   "modules": {
     "shaky": {
       "moduleType": "Accuracy",

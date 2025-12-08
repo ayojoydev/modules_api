@@ -10,9 +10,9 @@
         "fr": ""
       },
       "stats": {
-        "plates_penalty": { "a": 0.0, "b": 0.0 },
-        "head_modifier":  { "a": 0.0, "b": 0.0 },
-        "limb_modifier":  { "a": 0.0, "b": 0.0 }
+        "plates_penalty": { "a": 6.178809801, "b": 0.097574936},
+        "head_modifier":  { "a": 0.979380597, "b": 0.015517248},
+        "limb_modifier":  { "a": -14.54289515, "b": -0.229613863}
       }
     },
 
@@ -25,10 +25,286 @@
         "fr": ""
       },
       "stats": {
-        "recoil":         { "a": 0.0, "b": 0.0 },
-        "horiz_recoil":   { "a": 0.0, "b": 0.0 },
-        "per_missing_hp": { "a": 0.0, "b": 0.0 }
+        "recoil":         { "a": 2.182189179, "b": 0.034444765 },
+        "horiz_recoil":   { "a": 2.182189179, "b": 0.034444765 },
+        "per_missing_hp": { "a": 0.025326004, "b": 0.000392014 }
       }
+    },
+    "regulator": {
+      "moduleType": "Accuracy",
+      "localization": {
+        "ru": "Регулятор",
+        "en": "Regulator",
+        "es": "",
+        "fr": ""
+      },
+      "stats": {
+        "recoil_growth": { "a": -58.1648, "b": -0.91846 }
+      }
+    },
+
+    "shooter": {
+      "moduleType": "Accuracy",
+      "localization": {
+        "ru": "Стрелок",
+        "en": "Shooter",
+        "es": "",
+        "fr": ""
+      },
+      "stats": {
+        "aim_speed": { "a": 3.6346988, "b": 0.057394 }
+      }
+    },
+
+    "projector": {
+      "moduleType": "Accuracy",
+      "localization": {
+        "ru": "Проектор",
+        "en": "Projector",
+        "es": "",
+        "fr": ""
+      },
+      "stats": {
+        "hipfire_spread": { "a": -1.818222, "b": -0.02871 }
+      }
+    },
+
+    "controller": {
+      "moduleType": "Accuracy",
+      "localization": {
+        "ru": "Контролер",
+        "en": "Controller",
+        "es": "",
+        "fr": ""
+      },
+      "stats": {
+        "spread": { "a": -1.81769, "b": -0.028702 }
+      }
+    },
+
+    "holder": {
+      "moduleType": "Control",
+      "localization": {
+        "ru": "Держатель",
+        "en": "Holder",
+        "es": "",
+        "fr": ""
+      },
+      "stats": {
+        "recoil": { "a": -2.180319, "b": -0.034444 }
+      }
+    },
+
+    "fixator": {
+      "moduleType": "Control",
+      "localization": {
+        "ru": "Фиксатор",
+        "en": "Fixator",
+        "es": "",
+        "fr": ""
+      },
+      "stats": {
+        "recoil_horizontal": { "a": -2.185013, "b": -0.034368 }
+      }
+    },
+
+    "sedator": {
+      "moduleType": "Control",
+      "localization": {
+        "ru": "Седатор",
+        "en": "Sedator",
+        "es": "",
+        "fr": ""
+      },
+      "stats": {
+        "recoil_growth": { "a": -2.90846, "b": -0.04593 }
+      }
+    },
+
+    "thermos": {
+      "moduleType": "Convenience",
+      "localization": {
+        "ru": "Термос",
+        "en": "Thermos",
+        "es": "",
+        "fr": ""
+      },
+      "stats": {
+        "first5_damage_bonus": { "a": 1.180879, "b": 0.018526 }
+      }
+    },
+
+    "finisher": {
+      "moduleType": "Convenience",
+      "localization": {
+        "ru": "Завершитель",
+        "en": "Finisher",
+        "es": "",
+        "fr": ""
+      },
+      "stats": {
+        "last5_damage_bonus": { "a": 1.1783674, "b": 0.018598 }
+      }
+    },
+
+    "biostabiliser": {
+      "moduleType": "Convenience",
+      "localization": {
+        "ru": "Биостабилизатор",
+        "en": "Biostabiliser",
+        "es": "",
+        "fr": ""
+      },
+      "stats": {
+        "ergonomics": { "a": 2.9057709, "b": 0.045977 }
+      }
+    },
+
+    "silencer": {
+      "moduleType": "Convenience",
+      "localization": {
+        "ru": "Гаситель",
+        "en": "Silencer",
+        "es": "",
+        "fr": ""
+      },
+      "stats": {
+        "stabilisation": { "a": 5.8165366, "b": 0.0918654 }
+      }
+    },
+
+    "variator": {
+      "moduleType": "Convenience",
+      "localization": {
+        "ru": "Вариатор",
+        "en": "Variator",
+        "es": "",
+        "fr": ""
+      },
+      "stats": {
+        "sway": { "a": -3.638415, "b": -0.057335 }
+      }
+    },
+    "extractor": {
+      "moduleType": "Speed",
+      "localization": {
+        "ru": "Экстрактор",
+        "en": "Extractor",
+        "es": "",
+        "fr": ""
+      },
+      "stats": {
+        "draw_speed": { "a": 3.634664, "b": 0.057425 }
+      }
+    },
+
+    "operator": {
+      "moduleType": "Speed",
+      "localization": {
+        "ru": "Оператор",
+        "en": "Operator",
+        "es": "",
+        "fr": ""
+      },
+      "stats": {
+        "ads_speed": { "a": 1.4541814, "b": 0.0229526 }
+      }
+    },
+
+    "slider": {
+      "moduleType": "Speed",
+      "localization": {
+        "ru": "Слайдер",
+        "en": "Slider",
+        "es": "",
+        "fr": ""
+      },
+      "stats": {
+        "move_speed": { "a": 0.5875766, "b": 0.009116 }
+      }
+    },
+
+    "supressor": {
+      "moduleType": "Anomaly",
+      "localization": {
+        "ru": "Компрессор",
+        "en": "Supressor",
+        "es": "",
+        "fr": ""
+      },
+      "stats": {
+        "damage_near": { "a": 1.0052, "b": 0.015131 },
+        "damage_far":  { "a": -1.0052, "b": -0.015131 }
+      }
+    },
+
+    "decompressor": {
+      "moduleType": "Anomaly",
+      "localization": {
+        "ru": "Декомпрессор",
+        "en": "Decompressor",
+        "es": "",
+        "fr": ""
+      },
+      "stats": {
+        "damage_far": { "a": 0.9825823, "b": 0.0155101 },
+        "damage_near": { "a": -0.9825823, "b": -0.0155101 }
+      }
+    },
+
+    "executioner": {
+      "moduleType": "Anomaly",
+      "localization": {
+        "ru": "Палач",
+        "en": "Executioner",
+        "es": "",
+        "fr": ""
+      },
+      "stats": {
+        "limb_damage_modifier": { "a": 6.177483436, "b": 0.097636912}
+      }
+    },
+
+    "punch": {
+      "moduleType": "Anomaly",
+      "localization": {
+        "ru": "Пробойник",
+        "en": "Punch",
+        "es": "",
+        "fr": ""
+      },
+      "stats": {
+        "stamina_regen": { "a": 3.346955, "b": 0.052682 },
+        "move_speed":    { "a": 3.170801, "b": 0.049937 }
+      }
+    },
+
+    "aggressor": {
+      "moduleType": "Anomaly",
+      "localization": {
+        "ru": "Агрессор",
+        "en": "Aggressor",
+        "es": "",
+        "fr": ""
+      },
+      "stats": {
+        "heal_effectiveness": { "a": 9.138928, "b": 0.144101 },
+        "periodic_heal":      { "a": 0.3764652, "b": 0.0060128 }
+      }
+    },
+
+    "destroyer": {
+      "moduleType": "Anomaly",
+      "localization": {
+        "ru": "Губитель",
+        "en": "Destroyer",
+        "es": "",
+        "fr": ""
+      },
+      "stats": {
+        "reload_time": { "a": -2.907465, "b": -0.045942 },
+        "recoil":      { "a": -8.725492, "b": -0.137762 }
+      } 
     }
   }
 }
